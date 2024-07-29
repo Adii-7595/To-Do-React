@@ -65,6 +65,43 @@ To get started with this project, follow these steps:
 - **Deleting a Task**: Click the "Delete" button to remove the task from the list.
 - **Undoing Done**: Click the "Undo" button to revert the task to its original state.
 
+## System Design Overview
+
+### Purpose
+The Todo App is designed to manage tasks efficiently with a user-friendly interface. It allows users to add, edit, mark tasks as done, and delete tasks. The application is built using React for a dynamic user experience and CSS for styling.
+
+### Components
+1. **Frontend**:
+   - **React**: Used to build the interactive user interface.
+   - **CSS**: Used for styling the components and ensuring responsiveness.
+
+2. **Features**:
+   - **Task Management**: Users can perform CRUD operations (Create, Read, Update, Delete) on tasks.
+   - **Responsive Design**: The UI adapts to different screen sizes.
+
+## Implementation Explanation
+
+### Frontend (React)
+
+- **Components**:
+  - **`App.js`**: Integrates `TaskForm`, `TaskList`, and the search functionality. Manages state for tasks and search query.
+  - **`TaskForm.jsx`**: Handles task creation with input fields for title and description.
+  - **`TaskList.jsx`**: Displays the list of tasks and passes each task to `TaskItem`.
+  - **`TaskItem.jsx`**: Manages the display of individual tasks and handles actions like editing, deleting, and marking tasks as done.
+
+- **State Management**:
+  - React's `useState` is used for managing the state of tasks and search queries.
+  - The `completed` state of each task is toggled to apply the strikethrough effect.
+
+- **URL Parameters for Search**:
+  - **Search Functionality**: Tasks are filtered based on the search query extracted from the URL parameters. This ensures that the search results persist across page reloads.
+
+### Styling (CSS)
+
+- **Responsiveness**:
+  - Media queries adjust styles for different screen sizes.
+  - Ensures a consistent and accessible user experience on various devices.
+
 ## Contributing
 
 Feel free to contribute to this project by submitting issues or pull requests. Your feedback and suggestions are welcome!
@@ -77,4 +114,3 @@ This project is licensed under the Aditya License.
 
 - React for providing a powerful JavaScript library for building user interfaces.
 - CSS for styling and responsive design.
-
