@@ -1,0 +1,47 @@
+/* TaskForm.css */
+
+/* Styling the form */
+.task-form {
+    background: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding around the form */
+    max-width: 500px; /* Max width of the form */
+    margin: 20px auto; /* Center the form horizontally */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Input fields and textarea */
+.task-form input,
+.task-form textarea {
+    width: 100%;
+    padding: 12px; /* Padding inside inputs */
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space between elements */
+    font-size: 16px; /* Font size */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Textarea specific styles */
+.task-form textarea {
+    min-height: 100px; /* Minimum height */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Submit button */
+.task-form button {
+    background-color: #007bff; /* Primary color */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding around text */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for button */
+.task-form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
